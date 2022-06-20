@@ -1,0 +1,281 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100vh;
+}
+
+.bookstore {
+    border-radius: 5px;
+    width: 90%;
+    background-color: gainsboro;
+    height: 90%;
+}
+
+.bookstore h1 {
+    font-weight: bold;
+    font-size: 100px;
+    margin: 50px;
+    margin-left: 25%;
+    margin-top: 9%;
+    color: blueviolet;
+}
+
+header {
+    padding: 25px;
+}
+
+header ul {
+    list-style: none;
+    font-size: 94%;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.section {
+    margin-left: 20%;
+    width: 60%;
+    max-height: 300px;
+    background-color: rgb(169, 169, 169);
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.all-books h6 {
+    padding: 15px;
+    width: 70%;
+    padding-left: 80px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.section .form input {
+    background-color: rgb(169, 169, 169);
+    margin: 7px;
+    margin-left: 80px;
+    width: 70%;
+    height: 3.5rem;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+}
+
+.form button {
+    width: 100px;
+    height: 3rem;
+    float: left;
+    margin-top: 10px;
+    margin-left: 18%;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(65, 197, 241);
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.section .edit-book input {
+    background-color: rgb(169, 169, 169);
+    margin: 5px;
+    margin-left: 70px;
+    width: 70%;
+    height: 3rem;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    font-size: medium;
+    color: black;
+}
+
+.edit-book button {
+    width: 100px;
+    height: 3rem;
+    float: left;
+    margin-top: 10px;
+    margin-left: 18%;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(86, 208, 249);
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+
+.delete-book input {
+    background-color: rgb(169, 169, 169);
+    color: black;
+    margin: 20px;
+    margin-left: 60px;
+    width: 70%;
+    height: 3.5rem;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    font-size: medium;
+}
+
+.delete-book button {
+    width: 100px;
+    height: 3rem;
+    float: left;
+    margin-top: 10px;
+    margin-left: 80px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(88, 207, 247);
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.book-detail input {
+    background-color: rgb(169, 169, 169);
+    color: black;
+    margin: 20px;
+    width: 70%;
+    height: 3.5rem;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    font-size: medium;
+}
+
+.book-detail p {
+    margin: 3px;
+    width: 70%;
+    height: 3.5rem;
+    padding-left: 20px;
+    font-size: medium;
+}
+
+.section i {
+    float: right;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.h5 {
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .login {
+    background-color: white;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+section .login button {
+    background-color: deepskyblue;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    margin-right: 90px;
+    border: none;
+    border-radius: 15px;
+    padding: 4px;
+}
+
+section .register {
+    background-color: white;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+section .register input,
+button {
+    margin: 10px;
+}
+
+section .register button {
+    background-color: deepskyblue;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    margin-right: 90px;
+    border: none;
+    border-radius: 15px;
+    padding: 4px;
+}
+
+#logout {
+    margin: 20px;
+    margin-right: 40px;
+}
+
+.all-books-user .all-shops ul{
+    list-style: none;
+    color:rgb(242, 167, 70);
+    display: inline-flex;
+    overflow-x: scroll;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+.all-books-user .all-shops ul li{
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(2, 97, 192);
+}
+
+.section .all-books-user .data1 div{
+    margin-top: 17px;
+}
+.section .all-books-user .data1 button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(8, 92, 92);
+    color: white;
+    border-radius: 5px;
+}
+
+.section .cart .header{
+    color: rgb(4, 46, 46);
+    font-size: large;
+    font-weight: bold;
+    margin-left:5% ;
+}
+.section .cart .header div{
+    margin-right: 5px;
+}
+.section .cart .data2{
+    margin-left: 50px;
+}
+.section .cart .data2 div{
+    margin-left: 10px;
+    display: inline-flex;
+}
+
+.section .customers .header{
+    color: rgb(4, 46, 46);
+    font-size: large;
+    font-weight: bold;
+    margin-left:5% ;
+}
+
+.section .customers .header div{
+    margin-right: 5px;
+}
+.section .customers .data3{
+    margin-left: 50px;
+}
+.section .customers .data3 div{
+    margin-left: 10px;
+    display: inline-flex;
+}
+
+.section .all-books .data button{
+    width: 130px;
+    height: 35px;
+    background-color:rgb(3, 67, 67);
+    color: white;
+    border-radius: 5px;
+}

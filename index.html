@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="position-relative">
+    <div class=" bookstore">
+        <header>
+            <ul id="shop" class="row text-center" hidden>
+                <li id="all-books" class="col col-md-4 col-12">All Books</li>
+                <li id="add-book" class="col col-md-4 col-12">Add Book</li>
+                <li id="customers" class="col col-md-4 col-12">Customers</li>
+                <hr class="col col-md-11 col-12"><br><br>
+                <li id="logout" class="text-right text-primary h5">Log-Out</li>
+            </ul>
+            <ul id="user-page" class="row text-center" hidden>
+                <li id="all-books-user" class="col col-md-6 col-12 ">All Books</li>
+                <li id="cart" class="col col-md-6 col-12 ">Cart</li><br>
+                <hr>
+                <li id="logout-user" class="text-right text-primary h5">Log-Out</li>
+            </ul>
+            <ul id="login-page" class="row text-center">
+                <li id="login" class="col col-md-5 col-12 h4">Login</li>
+                <li id="register" class="col col-md-5 col-12 h4">Register</li>
+                <hr class=" col col-md-11 col-12">
+            </ul>
+        </header>
+        <section>
+            <div class="login text-center" hidden>
+                <h3 class="text-center text-primary">Sign-In</h3><br>
+                <input id="login-name" type="email" placeholder="Email..."><br><br>
+                <input id="login-pass" type="password" placeholder="Password"><br><br>
+                <button type="button">Sign-In</button>
+            </div>
+            <div class="register text-center" hidden>
+                <form>
+                    <h3 class="text-center text-primary">Register</h3>
+                    <input id="name" type="text" placeholder="Name."><br>
+                    <input id="mob" type="number" placeholder="Mobile Number."><br>
+                    <input id="uname" type="email" placeholder="Email..."><br>
+                    <input id="pass" type="password" placeholder="Password"><br>
+                    <input type="radio" id="book-shop" name="shopuser" value="bookshop"> Shop-User
+                    <input type="radio" id="book-user" name="shopuser" value="bookuser"> Book-User <br>
+                    <button type="button">Register</button>
+                </form>
+            </div>
+        </section>
+        <div class="section" hidden>
+            <i class="fa fa-remove"></i>
+            <div class="all-books" hidden>
+                <h3 class="text-success">Books:</h3>
+                <div class="row text-center h4">
+                    <div class="col col-md-3 col-12">Book-Name</div>
+                    <div class="col col-md-3 col-12"></div>
+                    <div class="col col-md-3 col-12"></div>
+                    <div class="col col-md-3 col-12"></div>
+                </div>
+            </div>
+            <div class="all-books-user" hidden>
+                <h3 class="text-success">Shops:</h3>
+                <div class="all-shops ">
+                    <ul>
+                    </ul>
+                </div>
+                <h3 class="text-success">Books:</h3>
+                <div class="row text-center text-success h4">
+                    <div class="col col-md-3 col-12">Book</div>
+                    <div class="col col-md-3 col-12">Price</div>
+                    <div class="col col-md-3 col-12">Quantity</div>
+                    <div class="col col-md-3 col-12"></div>
+                </div>
+            </div>
+            <div class="cart text-center" hidden>
+                <div class="row header h4 text-center">
+                    <div class="col col-md-2 col-12">Book</div>
+                    <div class="col col-md-2 col-12">Shop</div>
+                    <div class="col col-md-2 col-12">price</div>
+                    <div class="col col-md-2 col-12">Quantity</div>
+                    <div class="col col-md-2 col-12">Total</div>
+                </div>
+            </div>
+            <div class="customers" hidden>
+                <div class="row header h4 text-center">
+                    <div class="col col-md-2 col-12">Book</div>
+                    <div class="col col-md-2 col-12">User</div>
+                    <div class="col col-md-2 col-12">price</div>
+                    <div class="col col-md-2 col-12">quantity</div>
+                    <div class="col col-md-2 col-12">total</div>
+                </div>
+            </div>
+            <div class="form" hidden>
+                <input class="book-name" type="text" placeholder="Book Name.."><br>
+                <input class="auther-name" type="text" placeholder="Auther Name.."><br>
+                <input class="book-image" type="file" accept="image/*" placeholder="Book Image">
+                <input class="book-price" type="float" placeholder="Price."><br>
+                <input class="book-quantity" type="number" min="1" max="100" placeholder="Quantity.."><br>
+                <button id="add" type="button">Add</button>
+            </div>
+            <div class="edit-book" hidden>
+                <input class="ebook" type="text" placeholder="Book Name.."><br>
+                <p class="h4">Edit Book:</p>
+                <input class="book-name" type="text" placeholder="Book Name.."><br>
+                <input class="auther-name" type="text" placeholder="Auther Name.."><br>
+                <input class="book-price" type="float" placeholder="Price."><br>
+                <input class="book-quantity" type="number" min="1" max="100" placeholder="Quantity.."><br>
+                <button id="edit" type="button">Edit</button>
+            </div>
+            <div class="delete-book" hidden>
+                <input class="book-name" type="text" placeholder="Book Name.."><br>
+                <input class="book-quantity" type="number" min="1" max="100" placeholder="Quantity.."><br>
+                <button id="delete" type="button" hidden>Delete</button>
+                <button id="buy" type="button" hidden>Buy</button>
+            </div>
+            <div class="book-detail" hidden>
+                <input class="book-name" type="text" placeholder="Enter Book Name.."><br>
+                <p> Book-Name : <label id="book"></label></p><br>
+                <p> Auther-Name : <label id="auther"></label></p><br>
+                <p> Book-Price: <label id="price"></label></p><br>
+                <p> Books-Quantity : <label id="quantity"></label></p>
+            </div>
+        </div>
+        <h1>Book Store</h1>
+    </div>
+    <script type="module" src="firebase.js"></script>
+</body>
+
+</html>
